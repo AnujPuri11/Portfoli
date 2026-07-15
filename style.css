@@ -1,0 +1,300 @@
+/* 
+    Personal Portfolio CSS
+    Author: Anuj Puri
+    Purpose: Responsive portfolio design
+*/
+
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background-color: #f4f7fb;
+
+    color: #333;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* Header */
+
+header {
+
+    background: #1e3a8a;
+
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+}
+
+
+nav ul {
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 15px;
+
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+nav a:hover {
+
+    color: #facc15;
+
+}
+
+
+
+/* Main Layout */
+
+
+main {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 30px;
+
+}
+
+
+section {
+
+    background: white;
+
+    margin-bottom: 25px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+}
+
+
+h2 {
+
+    color: #1e3a8a;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* About Section */
+
+
+.about-container {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+.about-container img {
+
+    width: 200px;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+}
+
+
+
+/* Skills */
+
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+.skills-grid article {
+
+    background:#e0e7ff;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+
+
+/* Projects */
+
+
+.project-card {
+
+    border-left:5px solid #1e3a8a;
+
+    margin-bottom:20px;
+
+}
+
+
+.project-card a {
+
+    color:#1e3a8a;
+
+    font-weight:bold;
+
+}
+
+
+
+/* Contact Form */
+
+
+form {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+
+input,
+textarea {
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+}
+
+
+
+button {
+
+    background:#1e3a8a;
+
+    color:white;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+
+button:hover {
+
+    background:#162d6b;
+
+}
+
+
+
+/* Footer */
+
+
+footer {
+
+    text-align:center;
+
+    background:#111827;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+
+
+/* Responsive Design */
+
+
+@media(max-width:768px){
+
+
+nav ul {
+
+    flex-direction:column;
+
+}
+
+
+.about-container {
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+.skills-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+main {
+
+    padding:15px;
+
+}
+
+
+}
